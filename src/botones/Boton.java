@@ -117,7 +117,7 @@ public class Boton extends JButton implements MouseListener, ComponentListener, 
                 case constantes.compila.TIPO_BOTON.ICONO_IZQUIERDA:                    
                     if(ancho > alto) tam_icono = alto-(margen.top+margen.bottom);
                     else tam_icono = ancho-(margen.left+margen.right);
-                    tam_icono = tam_f;
+                    //tam_icono = tam_f;
                     //cambio_local = true;
                     
                     bounds_icono.setBounds(getMargin().left, ((alto/2)-(tam_f/2)), tam_icono, tam_icono);
@@ -148,8 +148,8 @@ public class Boton extends JButton implements MouseListener, ComponentListener, 
     /*Función para adaptar el ícono dependiendo de su aspecto*/
     private void iconoAdaptable(int tipo)
     {
-        int ancho = (getWidth()-(getMargin().left+getMargin().right));
-        int alto = (getHeight()-(getMargin().bottom+getMargin().top));
+        int ancho = (getWidth());
+        int alto = (getHeight());
         int ancho_max = ancho;
         int alto_max = alto;
         Double porcentaje_an = 100.0;

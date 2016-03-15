@@ -185,7 +185,7 @@ public class TextField extends JTextField implements ComponentListener{
         utils_graphics.setRenderings(g2);
         
         int r = (this.getHeight()*this.porcentaje_radio)/100;
-        RoundRectangle2D round = new RoundRectangle2D.Float(2, 2, this.getWidth()-4, this.getHeight()-4, r, r);
+        RoundRectangle2D round = new RoundRectangle2D.Float(0, 0, this.getWidth()-0, this.getHeight()-0, r, r);
         if(this.getBorde() == null && this.getBorder()== null && porcentaje_radio >= 5)
         {
             g2.setColor(getBackground());
